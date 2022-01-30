@@ -130,6 +130,7 @@
     font-size: 16px;
     display: block;
     padding: 15px 20px;
+    transition: background-color 1s;
 }
 
 .flex-menu > li > a:hover{
@@ -178,6 +179,7 @@
     color: #FFFFFF;
     font-size: 16px;
     text-decoration: none;
+    transition: background-color 1s;
 }
 
 .submenu li a:hover{
@@ -262,6 +264,7 @@ main{
     display: inline-block;
     border: solid #999 1px;
     text-decoration: none;
+    transition: border 1s;
 }
 
 .flex-grupoCajas1{
@@ -350,8 +353,6 @@ footer{
     justify-content: center;
     width: 30vw;
     align-self: center;
-    /*position: relative;
-    left: 14.5vw;*/
 }
 
 .footer__newsletter form input{
@@ -421,6 +422,7 @@ footer{
 /*** ASIDE ***/
 
 .flex-aside{
+    background-color: #e8dbfc;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     height: 900px;
@@ -502,6 +504,7 @@ form input[type="submit"]{
     padding: 5px 10px;
     border: solid #000 1px;
     border-radius: 3px;
+    transition: background-color 1s;
 }
 
 form input[type="submit"]:hover{
@@ -637,6 +640,7 @@ aside{
     display: inline-block;
     border: solid 1px #9c9c9c;
     padding: 15px;
+    transition: border 1s;
 }
 
 .div__impresoras3D__individual:hover{
@@ -693,6 +697,7 @@ aside{
     border: solid 1px #9c9c9c;
     margin: 20px 20px;
     padding: 15px;
+    transition: border 1s;
 }
 
 .div__ofertas__individual:hover{
@@ -894,6 +899,7 @@ aside{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 500;
     display: inline-block;
+    transition: background-color 1s;
 }
 
 .form__button--iniciar:hover{
