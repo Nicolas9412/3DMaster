@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3DMaster</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imagenes/impresion-3d.ico" type="image/x-icon">
+    <!-- Conexion con google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Quicksand Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Source Sans Pro Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="grid-categoriaImpresora3D-body-container">
+    <header class="grid-header-item">
+        <nav class="flex-nav">
+            <ul class="flex-menu">
+                <li><a class="menu__icono" href="../index.html"><img class="menu__logo" src="../imagenes/impresion-3d.ico" alt="Logo de 3DMaster"></a></li>
+                <li class="menu-bar">
+                    <a href="">Categorias    <i class="fas fa-chevron-circle-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="./categoria-impresoras3D.html">Impresoras 3D</a></li>
+                        <li><a href="">Insumos 3D</a></li>
+                        <li><a href="">Repuestos 3D</a></li>
+                    </ul>
+                </li>
+                <li class="menu-bar"><a href="./ofertas.html">Ofertas</a></li>
+                <li class="menu-bar"><a href="./servicios.html">Servicios</a></li>
+                <li class="menu-bar"><a href="./nosotros.html">Nosotros</a></li>
+                <li class="menu__item--formulario">
+                    <form action="">
+                        <input class="menu__buscador" placeholder=" Busque aqui...                         " type="text" name="busquedaProducto" id="busquedaProducto">
+                    </form>
+                </li>
+                <li class="menu-bar" class="menu__item--carrito"><a class="menu__icono" href=""><img class="menu__carrito" src="../imagenes/shopping-cart.png" alt="carrito de compras"></a></li>
+                <li class="menu-bar" class="menu__item--micuenta"><a href="./mi-cuenta.html">Mi cuenta</a></li>
+            </ul>
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            
+            <ul class="flex-bar-menu">
+                <li>
+                    <div class="accordion accordion-menu">
+                        <input type="checkbox" id="title10">
+                        <label for="title10">Categorias</label>
+                        <div class="content">
+                            <span><a href="./categoria-impresoras3D.html">Impresoras 3D</a></span>
+                            <span><a href="">Insumos 3D</a></span>
+                            <span><a href="">Repuestos 3D</a></span>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="./ofertas.html">Ofertas</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./mi-cuenta.html">Mi cuenta</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+    <aside class="grid-aside-item">
+        <div class="flex-aside">
+            <div class="flex-titulo">
+                <div class="filter-container">
+                    <img class="img-filter" src="../imagenes/filter-symbol.png" alt="filtro impresora 3D">
+                </div>
+                <h1 class="titulo-principal">Impresoras 3D</h1>
+            </div>
+            <div class="filter-categoria">
+                <h2>Tipo</h2>
+                <form class="filter-item" action="">
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>FDM</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>Resina</p>
+                    </label>
+                </form>
+            </div>
+            <div class="filter-categoria">
+                <h2>Marca</h2>
+                <form class="filter-item" action="">
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>Creality</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>Artillery</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>Hellbot</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>BigTreeTech</p>
+                    </label>
+                </form>
+            </div>
+            <div class="filter-categoria">
+            <h2>Area de impresion</h2>
+                <form class="filter-item" action="">
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>100 x 100 x 80</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>200 x 200 x 200</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>220 x 220 x 240</p>
+                    </label>
+                    <label class="container">
+                        <input  type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>220 x 220 x 250</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>220 x 220 x 260</p>
+                    </label>
+                    <label class="container">
+                        <input type="checkbox">
+                        <div class="checkmark"></div>
+                        <p>220 x 220 x 300</p>
+                    </label>
+                </form>
+            </div>
+            <div class="filter-categoria">
+                <h2>Precios</h2>
+                <form class="filter-item filter-precio" action="">
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    </div>
+                    <div class="rango-precios">
+                        <span>$0</span>
+                        <span class="precio_max">$150.000</span>
+                    </div>
+                    <div class="btn-aplicarPrecio">
+                        <input type="submit" value="Aplicar precio">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="flex-aside-mobile">
+            <div class="flex-titulo">
+                <div class="filter-container">
+                    <img class="img-filter" src="../imagenes/filter-symbol.png" alt="filtro impresora 3D">
+                    <h1 class="titulo-principal">Impresoras 3D</h1>
+                </div>
+            </div>
+            <div class="accordion"> 
+                <input type="checkbox" id="title1">
+                <label for="title1">Tipo</label>
+                <div class="content">
+                    <form class="filter-item" action="">
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>FDM</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>Resina</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="checkbox" id="title2">
+                <label for="title2">Marca</label>
+                <div class="content">
+                    <form class="filter-item" action="">
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>Creality</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>Artillery</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>Hellbot</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>BigTreeTech</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="checkbox" id="title3">
+                <label for="title3">Area de impresion</label>
+                <div class="content">
+                    <form class="filter-item" action="">
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>100 x 100 x 80</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>200 x 200 x 200</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>220 x 220 x 240</p>
+                        </label>
+                        <label class="container">
+                            <input  type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>220 x 220 x 250</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>220 x 220 x 260</p>
+                        </label>
+                        <label class="container">
+                            <input type="checkbox">
+                            <div class="checkmark"></div>
+                            <p>220 x 220 x 300</p>
+                        </label>
+                    </form>
+                </div>
+            </div>
+            <div class="accordion">
+                <input type="checkbox" id="title4">
+                <label for="title4">Precio</label>
+                <div class="content">
+                    <form class="filter-item filter-precio" action="">
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div>
+                        <div class="rango-precios">
+                            <span>$0</span>
+                            <span class="precio_max">$150.000</span>
+                        </div>
+                        <div class="btn-aplicarPrecio">
+                            <input type="submit" value="Aplicar precio">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="flex-main">
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+
+            <a href="">
+                <div class="div__impresoras3D__individual">
+                    <img src="../imagenes/impresora3D/creality/ender-5.png" alt="ender 5">
+                    <p>Impresora Creality 3D Ender 5 FDM</p>
+                    <span>$ 49.999</span>
+                </div>
+            </a>
+       
+
+
+        </div>
+    </main>
+    <footer class="grid-footer-item flex-footer">
+
+        <div class="footer__contacto">
+            <p>Av Colon 252 Centro Cordoba
+               Lunes a viernes 08:00 a 18:00
+               tel 0351-2345678
+            </p>
+        </div>
+        
+        <div class="footer__newsletter">
+            <p>Registrate y enterante de nuestras promociones antes que nadie</p>
+            <form>
+                <input type="email" name="correo" placeholder="usuario@gmail.com ...">
+                <a><img src="../imagenes/pointer.png" alt="puntero"></a>
+            </form>
+        </div>
+
+        <div class="footer__dataFiscal">
+            <img src="../imagenes/data-fiscal.png" alt="data fiscal">
+        </div>
+
+        <div class="footer__menu">
+            <ul>
+                <li><a href="">¿Como comprar?</a></li>
+                <li><a href="">Preguntas Frencuentes</a></li>
+                <li><a href="">¡ Contactanos !</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer__autor">
+            <p>Diseño web</p>
+            <img src="../imagenes/web-design.png" alt="logo de disenio web">
+        </div>
+        
+        <div class="footer__redesSociales">
+            <a href=""><img src="../imagenes/instagram.png" alt="instagram"></a>
+            <a href=""><img src="../imagenes/facebook.png" alt="facebook"></a>
+            <a href=""><img src="../imagenes/whatsapp.png" alt="whatsapp"></a>
+        </div>
+    </footer>
+</body>
+</html>

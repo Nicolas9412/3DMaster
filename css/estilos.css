@@ -1,0 +1,1406 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+/*** GRID LAYOUTS ***/
+
+.grid-index-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px auto 350px;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-categoriaImpresora3D-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main"
+    "footer footer";
+    grid-template-rows: 50px auto 350px;
+    grid-template-columns: 20vw 80vw;
+    overflow-x: hidden;
+}
+
+.grid-ofertas-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px auto 350px;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-nosotros-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px auto 350px;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-servicios-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px auto 350px;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-miCuenta-body-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px 53vh 350px;
+    grid-template-columns: 100vw;
+    overflow-x: hidden;
+}
+
+.grid-header-item{
+    grid-area: header;
+}
+
+.grid-aside-item{
+    grid-area: aside;
+}
+
+.grid-main-item{
+    grid-area: main;
+}
+
+.grid-footer-item{
+    grid-area: footer;
+}
+
+/*** NAVEGADOR - MENU ***/
+
+.flex-nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    background-color: #283593;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px 0;
+}
+
+.flex-nav ul li{
+    display: inline-block;
+}
+
+.flex-menu{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-menu > li{
+    position: relative;
+    display: inline-block;
+}
+
+.menu__logo, .menu__carrito{
+    width: 35px;
+    height: 35px;
+}
+
+.flex-menu > li > a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    display: block;
+    padding: 15px 20px;
+}
+
+.flex-menu > li > a:hover{
+    background-color: #001064;
+}
+
+.flex-menu li .menu__icono:hover{
+    background-color: transparent;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: #FFF;
+    line-height: 40px;
+    cursor: pointer;
+    display: none;
+    margin-right: 2.5vw;
+}
+
+#check{
+    display: none;
+}
+
+.flex-bar-menu{
+    display: none;
+}
+
+/*** SUBMENU ***/
+
+.submenu{
+    position: absolute;
+    background-color: #5f5fc4;
+    width: 140%;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.submenu li{
+    width: 100%;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    font-family: 'Quicksand', sans-serif;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.submenu li a:hover{
+    background-color: #001064;
+}
+
+.flex-menu li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+/*** BUSCADOR ***/
+
+.menu__buscador{
+    width: 250px;
+    height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 18;
+    border-radius: 5px;
+}
+
+.menu__buscador::placeholder{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 14px;
+}
+
+/*** MAIN ***/
+
+.flex-main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.flex-caruosel-item{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.flex-caruosel-item .subtitulos{
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 4.16%;
+    margin-bottom: 30px; 
+}
+
+.caruoselSecundario-container{
+    padding: 0 20px;
+}
+
+.caruoselSecundario{
+    display: block;
+    width: 100%;
+}
+
+.caruoselPrincipal-container{
+    padding: 0 20px;
+}
+
+.caruoselPrincipal{
+    display: block;
+    width: 100%;
+}
+
+.flex-section__grupoCajas1{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 100px 0;
+}
+
+.flex-section__grupoCajas1 a{
+    display: inline-block;
+    border: solid #999 1px;
+    text-decoration: none;
+}
+
+.flex-grupoCajas1{
+    width: 260px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex-section__grupoCajas1 a:hover{
+    border: solid #000 3px;
+}
+
+.metodo-pago-container, 
+.puntos-entrega-container, 
+.camion-envios-container{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-grupoCajas1 img{
+    width: 80%;
+    height: 100px;
+    align-self: center;
+}
+
+.flex-grupoCajas1 p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    width: fit-content;
+    align-self: center;
+    padding: 5px;
+}
+
+/*** FOOTER ***/
+
+.flex-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    align-items: flex-start;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+}
+
+.flex-footer div{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__contacto{
+    align-self: center;
+}
+
+.footer__contacto p{
+    width: 200px;
+    font-size: 1em;
+}
+
+.footer__newsletter{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.footer__newsletter p{
+    text-align: center;
+    width: 300px;
+    font-size: 18px;
+    align-self: center;
+    position: relative;
+    right: 10px;
+}
+
+.footer__newsletter form{
+    display: flex;
+    justify-content: center;
+    width: 30vw;
+    align-self: center;
+    /*position: relative;
+    left: 14.5vw;*/
+}
+
+.footer__newsletter form input{
+    width: 19vw;
+    height: 4vh;
+    font-size: 18px;
+}
+
+
+.footer__newsletter form a img{
+    width: 2vw;
+    height: 4vh;
+    margin-left: 5px;
+}
+
+.footer__dataFiscal img{
+    width: 115.2px;
+    height: 160.2px;
+}
+
+.footer__menu{
+    height: 130px;
+}
+
+.footer__menu ul li {
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    width: 200px;
+}
+
+.footer__menu ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+.footer__autor img{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__redesSociales{
+    align-self: center;
+}
+
+.footer__autor{
+    align-self: flex-end;
+}
+
+.footer__autor p{
+    position: relative;
+    top: 15px;
+    right: 5px;
+}
+
+.footer__redesSociales a img {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+/*** CATALOGO IMPRESORA 3D ***/
+
+/*** ASIDE ***/
+
+.flex-aside{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.titulo-principal{
+    display: inline-block;
+    font-size: 24px;
+    justify-self: center;
+    height: fit-content;
+}
+
+.flex-titulo{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.filter-categoria h2{
+    width: fit-content;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+
+.filter-categoria form{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+.filter-item label p{
+    display: inline-block;
+    position: relative;
+    bottom: 6px;
+}
+
+.filter-container{
+    width: 40px;
+}
+
+.img-filter{
+    width: 100%;
+    justify-self: center;
+}
+
+.filter-precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.slidecontainer{
+    margin-left: 30px;
+}
+
+.rango-precios{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-aplicarPrecio{
+    display: flex;
+    justify-content: end;
+    margin-top: 5px;
+}
+
+
+form input[type="submit"]{
+    display: block;
+    background-color: #04AA6D;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    padding: 5px 10px;
+    border: solid #000 1px;
+    border-radius: 3px;
+}
+
+form input[type="submit"]:hover{
+    background-color: #04905C;
+}
+
+.flex-aside-mobile{
+    display: none;
+}
+
+/* CHECKBOX */
+
+/* Hide the default checkbox */
+.container input {
+ position: absolute;
+ opacity: 0;
+ cursor: pointer;
+ height: 0;
+ width: 0;
+}
+
+.container {
+ display: block;
+ position: relative;
+ cursor: pointer;
+ font-size: 20px;
+ user-select: none;
+ margin-top: 5px;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+ display: inline-block;
+ position: relative;
+ top: 0;
+ left: 0;
+ height: 1.3em;
+ width: 1.3em;
+ background: #606062;
+ border-radius: 7px;
+ box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.30), 0px 1px 1px rgba(0,5);
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+ background-image: linear-gradient(#255CD2,#1D52C1)
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+ content: "";
+ position: absolute;
+ display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+ display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+ left: 0.45em;
+ top: 0.20em;
+ width: 0.24em;
+ height: 0.6em;
+ border: solid white;
+ border-width: 0 0.15em 0.15em 0;
+ transform: rotate(45deg);
+}
+
+/*** RANGE SLIDER ***/
+
+.slidecontainer {
+    display: inline-block;
+    width: 100%; /* Width of the outside container */
+    margin: auto;
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 10px; /* Specified height */
+    border-radius: 5px;
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    border-radius: 50%;
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 20px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+  /*** MAIN ***/
+
+main{
+    border-bottom: solid #999 1px;
+}
+aside{
+    border: solid #999 1px;
+}
+
+.flex-main{
+    display: flex;
+    flex-wrap: wrap; 
+    margin: 40px 60px;
+}
+
+.div__impresoras3D__individual{
+    display: inline-block;
+    border: solid 1px #9c9c9c;
+    padding: 15px;
+}
+
+.div__impresoras3D__individual:hover{
+    border: solid 1px #000;
+}
+
+.div__impresoras3D__individual img{
+    width: 184px;
+    height: 184px;
+    margin:auto;
+}
+
+.div__impresoras3D__individual p{
+    width: 184px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.div__impresoras3D__individual span{
+    font-size: 20px;
+    color: #000;
+}
+
+.flex-main a {
+    text-decoration: none;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+/*** OFERTAS ***/
+
+.main__ofertas section{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main__ofertas section h1{
+    font-size: 36px;
+    font-weight: 500;
+    margin-top: 1%;
+    margin-left: 5%;
+}
+
+.flex-div__ofertas{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div__ofertas__individual{
+    display: inline-block;
+    border: solid 1px #9c9c9c;
+    margin: 20px 20px;
+    padding: 15px;
+}
+
+.div__ofertas__individual:hover{
+    border: solid 1px #000;
+}
+
+.div__ofertas{
+    margin-left: 10%;
+    margin-top: 40px;
+}
+
+.div__ofertas__individual img{
+    width: 184px;
+    height: 184px;
+    margin:auto;
+}
+
+.div__ofertas__individual p{
+    width: 184px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.div__ofertas__individual span{
+    font-size: 20px;
+    color: #000;
+}
+
+.flex-div__ofertas a {
+    text-decoration: none;
+}
+
+/*** NOSOTROS ***/
+
+.main__nosotros section{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.main__nosotros section h1{
+    margin-top: 2vh;
+    margin-left: 10%;
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.main__nosotros section p{
+    margin-left: 15%;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 400;
+    width: 70%;
+    text-align: justify;
+}
+
+.main__nosotros section div{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.flex-nosotros .banner-container img{
+    display: block;
+    width: 100%;
+}
+
+.flex-nosotros{
+    display: flex;
+    flex-direction: column;
+}
+
+/*** SERVICIOS ***/
+
+.main__servicios section{
+    font-family: 'Source Sans Pro', sans-serif;
+ }
+
+.main__servicios h1{
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: 500;
+    margin-left: 5%;
+ }
+
+.main__servicios h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 10%;
+ }
+
+.flex-servicios{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-servicios p{
+    font-size: 16px;
+    font-weight: 500;
+    width: 400px;
+    text-align: justify;
+    display: inline-block;
+    align-self: center;
+}
+
+.servicio-multimedia-container{
+    width: 300px;
+}
+
+.servicio-multimedia-container img,
+.servicio-multimedia-container iframe{
+    width: 100%;
+    height: 200px;
+}
+
+.main__servicios section{
+    margin-bottom: 50px;
+}
+
+/*** MI CUENTA ***/
+
+.flex-login{
+    display: flex;
+    flex-wrap: wrap;
+    height: 90%;
+    align-content: center;
+}
+
+.img-login-container{
+    width: 204.8px;
+    height: 204.8px;
+}
+
+.img-login-container img{
+    width: 100%;
+}
+
+.flex-login h1{
+    font-family: 'Luxurious Roman', cursive;
+    font-size: 36px;
+    font-weight: 500;
+    display: inline-block;
+    width: 100%;
+    margin: 2.5vh 0 2.5vh 5vw;
+}
+
+.flex-login form{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__label--nombreUsuario{
+    display: inline-block;
+}
+
+.form__input--nombreUsuario{
+    width: 200px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form__label--contrasenia{
+    display: inline-block;
+}
+
+.form__input--contrasenia{
+    width: 200px;
+    height: 25px;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+.form__a--olvidoContrasenia{
+    display: flex;
+    justify-content: end;
+}
+
+.form__a--registrarse{
+    display: inline-block;
+}
+
+.flex-login form a{
+    text-decoration: none;
+    color: #000;
+}
+
+.form__button--iniciar{
+    background-color: #e6e6ff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.form__button--iniciar:hover{
+    background-color: #283593;
+    color: #FFFFFF;
+}
+
+.flex-nombreUsuario{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-contrasenia{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-inicio{
+    display: flex;
+    justify-content: end;
+}
+
+.flex-inicio a{
+    margin-right: 30px;
+    line-height: 32px;
+}
+
+.flex-login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.flex-login-cuerpo{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 1023px) {
+
+    /*** INDEX ***/
+
+    /*** LAYOUT ***/
+
+    .grid-index-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 50px auto auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+    /*** MENU ***/
+
+    .flex-bar-menu li .accordion-menu > label {
+        background-color: #5f5fc4;
+        font-size: 20px;
+        margin-left: 4vw;
+    }
+
+    .flex-bar-menu li .accordion-menu > .content{
+        background-color: #8787DA;
+        border: none;
+        margin-bottom: -7vh;
+    }
+
+    .flex-bar-menu li .accordion-menu .content span{
+        display: block;
+        padding: 8px 22px;
+        margin-bottom: 1px;  
+        font-size: 20px;      
+    }
+
+    /*** MAIN ***/
+
+    .flex-caruosel-item .subtitulos{
+        font-size: 26px;
+    }
+
+    .flex-section__grupoCajas1{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .flex-section__grupoCajas1 a{
+        min-width: 250px;
+        width: 33%;
+        align-self: center;
+        margin-top: 5vh;
+
+    }
+
+    .flex-section__grupoCajas1 a div{
+        width: 100%;
+    }
+
+    .flex-section__grupoCajas1 a:last-child{
+        margin-bottom: 5vh;
+    }
+
+    .flex-grupoCajas1 img{
+        max-width: 199px;
+    }
+
+    .flex-section__grupoCajas1 a {
+        max-width: 250px;
+    }
+
+    /*** CATALOGO IMPRESORAS 3D ***/
+
+    .grid-categoriaImpresora3D-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "aside"
+        "main"
+        "footer";
+        grid-template-rows: 50px auto auto auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+    .flex-menu .menu-bar{
+        display: none;
+    }
+
+    .flex-menu{
+        justify-content: start;
+    }
+
+    .menu__item--formulario{
+        margin:auto
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    .flex-bar-menu {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        background-color: #5f5fc4;
+        top: 50px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    .flex-bar-menu li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    .flex-bar-menu li a{
+        font-size: 20px;
+        color: #FFF;
+        text-decoration: none;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    /*** ACCORDION ***/
+
+    .accordion > input{
+        display: none;
+    }
+    
+    .accordion > label{
+        display: block;
+        padding: 8px 22px;
+        margin-bottom: 1px;
+        cursor: pointer;
+        background-color: #a5d6a7;
+        border-radius: 3px;
+        color: #FFF;
+        transition: ease .5s;
+    }
+    
+    .accordion > label:hover{
+        background: #75a478;
+    }
+    
+    .accordion > .content{
+        background-color: #d7ffd9;
+        padding: 10px 25px;
+        border: 1px solid #A7A7A7;
+        margin-bottom: 1px;
+        border-radius: 3px;
+    }
+    
+    .accordion input + label + .content{
+        display: none;
+    }
+    
+    .accordion input:checked + label + .content{
+        display: block;
+    }
+
+    .accordion > label::after {
+        font-family: "Font Awesome 5 Free";
+        content: '\f078';
+        font-weight: bold;
+        float: right;
+        margin-right: 1vw;
+    }
+
+    .accordion input:checked + label::after {
+        font-family: "Font Awesome 5 Free";
+        content: '\f077';
+    }
+
+    /*** ASIDE ***/
+
+    aside .flex-aside{
+        display: none;
+    }
+
+    aside .flex-aside-mobile{
+        display: block;
+        
+    }
+    .grid-aside-item{
+        background-color: #75a478;
+    }
+
+    .flex-titulo{
+        position: relative;
+        bottom: 0.5vh;
+        color: #FFF;
+    }
+
+    .filter-container{
+        width: 200px;
+    }
+
+    .filter-container img{
+        width: 15%;
+    }
+
+    form input[type="submit"]{
+        font-size: 14px;
+    }
+
+    .filter-item label p{
+        font-size: 16px;
+        position: relative;
+    }
+
+    /*** MAIN ***/
+
+    @media (max-width: 887px){
+        .flex-main{
+            justify-content: space-evenly;
+        }
+    }
+
+    /*** FOOTER ***/
+
+    .flex-footer{
+        flex-direction: column;
+    }
+
+    .grid-footer-item .footer__dataFiscal{
+        display: none;
+    }
+
+    .footer__newsletter{
+        order: 1;
+        margin-top: 2.5vh;
+        position: relative;
+        left: 1.9vw;
+        text-align: center;
+    }
+
+    .footer__newsletter p{
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .footer__newsletter form input{
+        font-size: 12px;
+        min-width: 152px;
+    }
+
+    .footer__newsletter form img{
+        font-size: 12px;
+        min-width: 25px;
+    }
+    
+    .footer__menu{
+        order: 2;
+        text-align: center;
+        margin-top: 2vh;
+        height: fit-content;
+        align-self: center;
+    }
+    
+    .footer__contacto{
+        order:3;
+        text-align: center;
+        margin-top: 2vh;
+        min-width: 200px;
+    }
+    
+    .footer__redesSociales{
+        order: 4;
+        margin-top: 2vh;
+    }
+
+    .footer__redesSociales a img{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .footer__redesSociales a{
+        margin-left: 20px;
+    }
+    
+    .footer__autor{
+        order: 5;
+        margin-top: 2vh;
+        align-self: center;
+    }
+
+    /*** OFERTAS ***/
+
+    .grid-ofertas-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 50px auto auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+    /*** MAIN ***/
+
+    .main__ofertas section h1{
+        margin-top: 20px;
+        font-size: 26px;
+    }
+
+    /*** NOSOTROS ***/
+
+    .grid-nosotros-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 50px auto auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+    .main__nosotros section h1{
+        font-size: 26px;
+    }
+
+    .main__nosotros section p{
+        font-size: 20px;
+    }
+
+    /*** SERVICIOS ***/
+
+    /*** LAYOUT ***/
+
+    .grid-servicios-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 50px auto auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+    /*** MAIN ***/
+
+    .flex-servicios{
+        height: 350px;
+        flex-direction: column;
+    }
+
+    .flex-servicios div{
+        align-self: center;
+    }
+
+    .flex-servicios p{
+        width: 70%;
+        align-self: center;
+    }
+
+    .main__servicios h1{
+        font-size: 28px;
+    }
+
+    .main__servicios h2{
+        font-size: 24px;
+    }
+
+    .main__servicios section{
+        margin-bottom: 10px;
+    }
+
+    /*** MI CUENTA ***/
+
+    .grid-miCuenta-body-container{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        grid-template-rows: 50px 44vh auto;
+        grid-template-columns: 100vw;
+        overflow-x: hidden;
+    }
+
+}
+
+@media (max-width: 599px){
+    /*** INDEX ***/
+
+    /*** MAIN ***/
+
+    .flex-caruosel-item .subtitulos{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .flex-caruosel-item{
+        margin-top: 20px;
+    }
+
+    /*** OFERTAS ***/
+
+    /*** MAIN ***/
+
+    .main__ofertas section h1{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    /*** NOSOTROS ***/
+
+    /*** MAIN ***/
+
+    .main__nosotros section h1{
+        font-size: 20px;
+    }
+
+    .main__nosotros section p{
+        font-size: 16px;   
+    }
+    
+    /*** SERVICIOS ***/
+
+    /*** MAIN ***/
+
+    .main__servicios h1{
+        font-size: 24px;
+    }
+
+    .main__servicios h2{
+        font-size: 20px;
+    }
+
+    .main__servicios section{
+        margin-bottom: 10px;
+    }
+
+    /*** MI CUENTA ***/
+
+    .img-login-container{
+        display: none;
+    }
+    .flex-login{
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    .flex-login-cuerpo{
+        justify-content: center;
+    }
+
+    .flex-login-form{
+        width: 250px;
+        height: 25vh;
+        justify-content: space-evenly;
+    }
+
+    .flex-nombreUsuario{
+        flex-direction: column;
+    }
+    .flex-contrasenia{
+        flex-direction: column;
+    }
+    .form__a--olvidoContrasenia{
+        justify-content: start;
+    }
+    .flex-inicio{
+        justify-content: start;
+    }
+
+
+}
